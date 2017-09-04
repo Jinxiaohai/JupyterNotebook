@@ -1,0 +1,109 @@
+%#-*- coding:utf-8 -*-
+\documentclass[11pt,UTF8,hyperref,openany]{ctexbook}
+\usepackage{amsmath}             %%%%多种的公式环境和数学命令
+\usepackage{amssymb}             %%%%数学符号生成命令
+\usepackage{array}               %%%%数组和表格
+\usepackage{booktabs}            %%%%水平的表格线
+\usepackage{calc}                %%%%四则运算
+\usepackage{caption}             %%%%插图和表格
+% \usepackage{ctex}                %%%%中文字体
+\usepackage{ctexcap}             %%%%中文字体和标题
+\usepackage{color}
+\usepackage{fancyhdr}            %%%%页眉页脚设置
+\usepackage{graphicx}            %%%%插图
+\usepackage{geometry}            %%%%版面尺寸控制
+\geometry{left=2cm, right=2cm, top=2cm, bottom=2cm, head=2cm, foot=1cm}
+% head=?cm, headmap=?cm
+\usepackage{hyperref}            %%%%超链接
+\usepackage{ifthen}              %%%%条件
+\usepackage{longtable}           %%%%跨页表格
+\usepackage{lineno}              %%%%行号控制
+\usepackage{listings}            %%%%C++
+\usepackage{multicol}            %%%%多栏
+\usepackage{makeidx}             %%%%索引
+\usepackage{ntheorem}            %%%%定理设置
+\usepackage{paralist}            %%%%列表
+\usepackage{tabularx}            %%%%表格的列宽
+\usepackage{titlesec}            %%%%章节标题
+\usepackage{fancyvrb}            %%%%抄录
+\usepackage{fontspec}            %%%%字体
+\usepackage{titletoc}            %%%%目录格式
+\usepackage{xcolor}              %%%%颜色处理
+\usepackage{xeCJK}               %%%%中日朝文字处理
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{xiaohai}
+\date{1990/10/12}
+\title{my title}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\thefootnote}{}
+\footnote{\heiti{ 作者简介}: 金小海，男}
+\footnote{\heiti{ 现在单位}: Sinap}
+% 将脚注的引用记数设为0.
+\setcounter{footnote}{0}
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\centering{\large{命令模式(按Esc开启)}}
+\begin{itemize}
+\item \textbf{Enter} : 转入编辑模式
+\item {\textbf{Shift-Enter} : 运行本单元，选中下个单元}
+\item {\textbf{Ctrl-Enter} : 运行本单元}
+\item {\textbf{Alt-Enter} : 运行本单元，在其下插入新单元}
+\item {\textbf{y} : 单元转入代码状态}
+\item {\textbf{m} : 单元转入markdown状态}
+\item {\textbf{r} : 单元转入raw状态}
+\item {\textbf{1} : 设定一级标题}
+\item {\textbf{2} : 设定二级标题}
+\item {\textbf{3} : 设定三级标题}
+\item {\textbf{4} : 设定四级标题}
+\item {\textbf{5} : 设定五级标题}
+\item {\textbf{6} : 设定六级标题}
+\item {\textbf{k} : 选中上方单元}
+\item {\textbf{j} : 选中下方单元}
+\item {\textbf{Shift-k} : 扩大选中上方单元}
+\item {\textbf{Shift-j} : 扩大选中下方单元}
+\item {\textbf{a} : 在上方插入新单元}
+\item {\textbf{b} : 在下方插入新单元}
+\item {\textbf{x} : 剪切选中的单元}
+\item {\textbf{c} : 复制选中的单元}
+\item {\textbf{Shift-v} : 粘贴到上方单元}
+\item {\textbf{v} : 粘贴到下方单元}
+\item {\textbf{z} : 恢复删除的最后一个单元}
+\item {\textbf{dd} : 删除选中的单元}
+\item {\textbf{Shift-m} : 合并选中的单元}
+\item {\textbf{Ctrl-s} : 文件存盘}
+\item {\textbf{l} : 转换行号}
+\item {\textbf{Shift-o} : 转换输出滚动}
+\item {\textbf{h} : 显示快捷键帮助}
+\item {\textbf{Shift-Space} : 向上滚动}
+\item {\textbf{Space} : 向下滚动}
+\end{itemize}
+
+\centering{\large{编辑模式(按Enter键启动)}}
+\begin{itemize}
+\item {\textbf{tab} : 代码补全或缩进}
+\item {\textbf{Shift-tab} : 提示}
+\item {\textbf{Ctrl-]} : 缩进}
+\item {\textbf{Ctrl-[} : 解除缩进}
+\item {\textbf{Ctrl-a} : 全选}
+\item {\textbf{Ctrl-z} : 复原}
+\item {\textbf{Ctrl-y} : 再做}
+\item {\textbf{Ctrl-home} : 跳到单元开头}
+\item {\textbf{Ctrl-end} : 跳到单元结尾}
+\item {\textbf{Esc} : 进入命令模式}
+\item {\textbf{Shift-Enter} : 运行本单元，选中下个单元}
+\item {\textbf{Ctrl-Enter} : 运行本单元}
+\item {\textbf{Alt-Enter} : 运行本单元，在下面插入一个单元}
+\item {\textbf{up} : 光标上移或转入上一个单元}
+\item {\textbf{down} : 光标下移或转入下一个单元}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "jupyter"
+%%% End:
